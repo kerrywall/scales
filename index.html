@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Musical scale generator</title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+	<header>
+		<h1>Musical scale generator</h1>	
+	</header>
+	
+	<div class="main">
+		<div class="chooseScale">
+			<h4>Choose a scale type:</h4>
+			<ul class="modes">
+				<li class="mode" name="Aeolian" id="aeolian">Aeolian</li>
+				<li class="mode" name="Blues" id="blues">Blues</li>
+				<li class="mode" name="Chromatic" id="chromatic">Chromatic</li>
+				<li class="mode" name="Dorian" id="dorian">Dorian</li>
+				<li class="mode" name="Double Harmonic" id="doubleharmonic">Double Harmonic</li>
+				<li class="mode" name="Flamenco" id="flamenco">Flamenco</li>
+				<li class="mode" name="Harmonic Minor" id="harmonicminor">Harmonic Minor</li>
+				<li class="mode" name="Ionian" id="ionian">Ionian</li>
+				<li class="mode" name="Locrian" id="locrian">Locrian</li>
+				<li class="mode" name="Lydian" id="lydian">Lydian</li>
+				<li class="mode" name="Major Pentatonic" id="majorpentatonic">Major Pentatonic</li>
+				<li class="mode" name="Melodic Minor" id="melodicminor">Melodic Minor</li>
+				<li class="mode" name="Minor Pentatonic" id="minorpentatonic">Minor Pentatonic</li>
+				<li class="mode" name="Mixolydian" id="mixolydian">Mixolydian</li>
+				<li class="mode" name="Phrygian" id="phrygian">Phrygian</li>
+			</ul>
+		</div>
+		<!-- /.chooseScale -->
+		<div class="chooseKey">
+			<h4>Pick a key to generate a <span class="selectedScale"></span> scale!</h4>
+			<ul class="keys">
+				<li class="key" id="A">A</li>
+				<li class="key" id="B">B</li>
+				<li class="key" id="B">C</li>
+				<li class="key" id="D">D</li>
+				<li class="key" id="E">E</li>
+				<li class="key" id="F">F</li>
+				<li class="key" id="G">G</li>
+				<li class="key" id="Ab">Ab</li>
+				<li class="key" id="Bb">Bb</li>
+				<li class="key" id="Db">Db</li>
+				<li class="key" id="Eb">Eb</li>
+				<li class="key" id="Gb">Gb</li>
+				<li class="key" id="C#">C#</li>
+				<li class="key" id="D#">D#</li>
+				<li class="key" id="F#">F#</li>
+				<li class="key" id="G#">G#</li>
+			</ul>
+		</div>
+		<!-- /.chooseKey -->
+		<div class="result">
+			<h4 class="scaleName"></h4>
+			<p class="scaleNotes"></p>
+			<p class="scaleIntervals"></p>
+		</div>
+		<!-- /.result -->
+		<button class="reset">
+			go again?
+		</button>
+		<!-- /.reset -->
+	</div>
+	<!-- /.main -->
+	<footer>
+		<p>Coded with love by <a href="http://kerrywall.com" target="_blank">Kerry</a> using the <a href="https://github.com/saebekassebil/teoria" target="_blank">teoria.js library</a>.</p>
+	</footer>
+	
+	<script src="js/vendor/teoria.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/init.js"></script>
+</body>
+</html>
